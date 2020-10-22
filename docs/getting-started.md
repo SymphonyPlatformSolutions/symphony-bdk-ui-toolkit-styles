@@ -1,13 +1,12 @@
 # Getting Started
+To install UIToolkit-Styles on your project you can either install it with npm or from CDN.
 
 
-## Install
+## Install with **npm**:
 
-To install UIToolkit-Styles on your project you can: 
+**Requiremets**
 
-- Install with **npm**:
-
-First, you will need to have Node >= 8.10 and npm >= 5.6 on your machine.
+You will need to have Node >= 8.10 and npm >= 5.6 on your machine.
 
 Install the library from npm by running the following command on your project:
 
@@ -29,7 +28,7 @@ If you are using Webpack or other module bundler you can also import the SASS ve
 ```
 
 
-- Install from **CDN**:
+## Install from **CDN**:
 
 Alternatively, you can use the [symphony](https://cdn.symphony.com/resources/ui-toolkit/{master}/css/uitoolkit.css) CDN to load the compiled CSS version. 
 
@@ -38,7 +37,10 @@ Import the css on your project:
 <link rel="stylesheet" href="https://cdn.symphony.com/resources/ui-toolkit/master/css/uitoolkit.css">
 ```
 
+**Note**
 
+With this href you will always get the latest version. You can get change it with the stable release versions:
 
-
-
+```bash
+<link rel="stylesheet" href="https://cdn.symphony.com/resources/ui-toolkit/1.0.9/css/uitoolkit.css">
+```
