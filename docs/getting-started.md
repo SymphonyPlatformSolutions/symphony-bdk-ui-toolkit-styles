@@ -42,5 +42,5 @@ Import the css on your project:
 With this href you will always get the latest version. You can get change it with the stable release versions:
 
 ```bash
-<link rel="stylesheet" href="https://cdn.symphony.com/resources/ui-toolkit/1.0.9/css/uitoolkit.css">
+<link rel="stylesheet" href="https://cdn.symphony.com/resources/ui-toolkit/v1.0.10/css/uitoolkit.css">
 ```
