@@ -4,10 +4,6 @@ To install UIToolkit-Styles on your project you can either install it with npm o
 
 ## Install with **npm**:
 
-**Requiremets**
-
-You will need to have Node >= 8.10 and npm >= 5.6 on your machine.
-
 Install the library from npm by running the following command on your project:
 
 ```bash
@@ -20,11 +16,16 @@ Import the css on your project:
  import '@symphony/uitoolkit-styles/dist/css/uitoolkit.css';
 ```
 
-If you are using Webpack or other module bundler you can also import the SASS version:
+You can also import the SASS version:
 
 ```bash
-  $ICONS_FONTS_PATH: '../dist/fonts';
-  @import '../uitoolkit.scss';
+  @import '~@symphony/uitoolkit-styles/uitoolkit.scss'
+```
+
+In this case, you might need to indicate the fonts path changing  the `$ICONS_FONTS_PATH` variable:
+
+```bash
+ $ICONS_FONTS_PATH: '../myPath/fonts';
 ```
 
 
@@ -32,15 +33,15 @@ If you are using Webpack or other module bundler you can also import the SASS ve
 
 Alternatively, you can use the [symphony](https://cdn.symphony.com/resources/ui-toolkit/{master}/css/uitoolkit.css) CDN to load the compiled CSS version. 
 
-Import the css on your project:
+Import the prefered css on your project:
 ```bash
-<link rel="stylesheet" href="https://cdn.symphony.com/resources/ui-toolkit/master/css/uitoolkit.css">
+<link rel="stylesheet" href="https://cdn.symphony.com/resources/ui-toolkit/v1.0.10/css/uitoolkit.css">
 ```
 
 **Note**
 
-With this href you will always get the latest version. You can get change it with the stable release versions:
+ For development purposes, if you want to test the latest features you can use the master version from the CDN:
 
 ```bash
-<link rel="stylesheet" href="https://cdn.symphony.com/resources/ui-toolkit/v1.0.10/css/uitoolkit.css">
+<link rel="stylesheet" href="https://cdn.symphony.com/resources/ui-toolkit/master/css/uitoolkit.css">
 ```
