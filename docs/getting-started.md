@@ -2,7 +2,7 @@
 To install UIToolkit-Styles on your project you can either install it with npm or from CDN.
 
 
-## Install with **npm**:
+## Install:
 
 Install the library from npm by running the following command on your project:
 
@@ -10,11 +10,18 @@ Install the library from npm by running the following command on your project:
 $ npm install @symphony/uitoolkit-styles --save
 ```
 
-Import the css on your project:
+Or using yarn
+
+```bash
+$ yarn add @symphony/uitoolkit-styles
+```
+
+Import the main css file on your project:
 
 ```bash
  import '@symphony/uitoolkit-styles/dist/css/uitoolkit.css';
 ```
+Using webpack will serve automatically font files
 
 You can also import the SASS version:
 
@@ -22,12 +29,11 @@ You can also import the SASS version:
   @import '~@symphony/uitoolkit-styles/uitoolkit.scss'
 ```
 
-In this case, you might need to indicate the fonts path changing  the `$ICONS_FONTS_PATH` variable:
+In some cases (depending on your bundling solution) you might need to indicate the icon fonts path changing  the `$ICONS_FONTS_PATH` variable, with **myPath** pointing to the fonts directory under **node_modules/@symphony/uitoolkit-styles/dist/fonts**
 
 ```bash
- $ICONS_FONTS_PATH: '../myPath/fonts';
+ $ICONS_FONTS_PATH: 'myPath/fonts';
 ```
-
 
 ## Install from **CDN**:
 
