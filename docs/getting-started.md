@@ -37,7 +37,7 @@ In some cases (depending on your bundling solution) you might need to indicate t
 
 ## Install from **CDN**:
 
-Alternatively, you can use the [symphony](https://cdn.symphony.com/resources/ui-toolkit/{master}/css/uitoolkit.css) CDN to load the compiled CSS version. 
+Alternatively, you can use the [symphony](https://cdn.symphony.com/resources/ui-toolkit/master/css/uitoolkit.css) CDN to load the compiled CSS version. 
 
 Import the prefered css on your project:
 ```bash
