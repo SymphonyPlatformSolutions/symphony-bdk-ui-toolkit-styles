@@ -79,3 +79,9 @@ until we have a design for them in the UI Toolkit. */
   padding: 1em;
   background-color: $scolor-graphite-minus-96;
 }
+
+//Docs
+pre {
+  background-color: $--tk-code-block-color;
+  @extend .tk-p-2h;
+}

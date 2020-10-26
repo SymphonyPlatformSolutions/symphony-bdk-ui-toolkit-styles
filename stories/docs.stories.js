@@ -4,4 +4,4 @@ export default {
   title: 'Docs',
 };
 
-export const GettingStarted = () => start;
+export const GettingStarted = () =>`<div class="tk-ml-2">${start}</div>`;
