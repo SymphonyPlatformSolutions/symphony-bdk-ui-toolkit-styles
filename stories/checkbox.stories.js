@@ -80,7 +80,7 @@ export const Checkbox = () => {
             <label class="tk-checkbox__label" for="checkbox-7_azerty" tabindex="-1">Checkbox</label>
         </span>
         <p>If your browser doesn't support the ':focus-within' CSS selector, then add the CSS class '.tk-checkbox--focused'.</p>
-        <span class="tk-checkbox tk-checkbox--focused" tabindex="0">
+        <span class="tk-checkbox tk-checkbox--focused focus-visible" tabindex="0">
             <div class="tk-checkbox__inputContainer" tab-index="-1">
                 <input class="tk-checkbox__input" type="checkbox"
                     id="checkbox-7_withClass" name="focus-label" tabindex="-1" value="top" checked autofocus>

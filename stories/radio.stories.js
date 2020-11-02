@@ -48,7 +48,7 @@ export const Radio = () => {
         </span>
         
         <h2>Radio with focus</h2>
-        <span class="tk-radio tk-radio--focused">
+        <span class="tk-radio tk-radio--focused focus-visible">
             <div class="tk-radio__inputContainer" tab-index="-1">
                 <input class="tk-radio__input"
                     type="radio" id="radio-_KdZz3_g72" name="focus-radio" tabindex="-1"

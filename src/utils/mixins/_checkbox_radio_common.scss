@@ -9,9 +9,20 @@
   margin: $focusMargin;
   padding: $focusMargin;
 
-  &:focus-within,
-  &--focused { // For IE11 that doesn't support ':focus-within'
+  &:focus-within:focus-visible,
+  &:focus-within.focus-visible,
+  &--focused:focus-visible,
+  &--focused.focus-visible { // For IE11 that doesn't support ':focus-within'
     @include browserOutline();
+  }
+
+  &:focus-within:not(:focus-visible):not(.focus-visible),
+  &--focused:not(:focus-visible):not(.focus-visible) {
+    // We disable the default focus, because we do not want
+    // it to show with mouse events. Instead, we rely on the
+    // focus-visible feature, that might be added through
+    // a polyfill
+    outline: none;
   }
 
   &__input {
