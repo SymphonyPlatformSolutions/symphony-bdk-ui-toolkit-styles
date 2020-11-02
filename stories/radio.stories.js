@@ -47,17 +47,6 @@ export const Radio = () => {
                 tabindex="-1">Radio</label>
         </span>
         
-        <h2>Radio with focus</h2>
-        <span class="tk-radio tk-radio--focused focus-visible">
-            <div class="tk-radio__inputContainer" tab-index="-1">
-                <input class="tk-radio__input"
-                    type="radio" id="radio-_KdZz3_g72" name="focus-radio" tabindex="-1"
-                    value="active-radio-1" checked>
-                <span class="tk-radio__icon" aria-hidden></span>
-            </div>
-            <label class="tk-radio__label" for="radio-_KdZz3_g72" tabindex="-1">Radio</label>
-        </span>
-        
         <h2>Label placements</h2>
         <p>The label can be positioned at the <strong>top, right, bottom, left</strong> of the radio</p>
         <div class="d-inline-block">
