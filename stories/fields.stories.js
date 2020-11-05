@@ -191,3 +191,23 @@ export const TextArea = () => {
     <h3>Disabled</h3>
     <textarea class="tk-input" cols="50" rows="5" disabled></textarea>`;
 };
+
+export const OptionsList = () => {
+return `
+<div class="tk-m-4">
+  <h2>Options list</h2>
+  <p> To use a custom dropdown list you can use the following component:</p>
+  <div class="tk-list-box tk-mt-2" style="width:256px">
+    <div class="tk-list-option">Option 1</div>
+    <div class="tk-list-option">Option 2</div>
+    <div class="tk-list-option">Option 3
+      <i class="tk-list-option--selected"></i>
+    </div>
+    <div class="tk-list-option">Option 4</div>
+    <div class="tk-list-option">Option 5</div>
+    <div class="tk-list-option">Option 7</div>
+    <div class="tk-list-option">Option 8</div>
+    <div class="tk-list-option">Example of long list option with two lines</div>
+  </div>
+</div>
+`}
