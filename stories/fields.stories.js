@@ -25,7 +25,7 @@ export const TextField = () => {
               <label for="input">Field label</label>    
             </div>
             <div class="tk-input__container">
-              <input id="input" type="password" class="tk-input" placeholder="Type something..." />
+              <input id="input1" type="password" class="tk-input" placeholder="Type something..." />
               <button class="tk-input__hide">Hide</button>
             </div>
           </div>
@@ -35,7 +35,7 @@ export const TextField = () => {
               <label for="input">Field label</label>    
             </div>
             <div class="tk-input__container">
-              <input id="input" type="text" class="tk-input tk-input--with-icon" placeholder="Type something..." />
+              <input id="input2" type="text" class="tk-input tk-input--with-icon" placeholder="Type something..." />
               <div tabindex="0" class="tk-input__icon" style="cursor: pointer;">
                 <i class="tk-icon-calendar "></i>
               </div>
@@ -55,7 +55,7 @@ export const TextField = () => {
         <span class="tk-validation tk-validation--error">
           <div class="tk-input-group">
             <div class="tk-input__container">
-              <input id="input" type="text" class="tk-input tk-input--with-icon" placeholder="Type something..." />
+              <input id="input3" type="text" class="tk-input tk-input--with-icon" placeholder="Type something..." />
               <div tabindex="0" class="tk-input__icon" style="cursor: pointer;">
                 <i class="tk-icon-calendar "></i>
               </div>
@@ -73,7 +73,7 @@ export const TextField = () => {
           <br/>
           <div class="tk-input-group tk-input-group--disabled">
             <div class="tk-input__container">
-              <input id="input" type="text" class="tk-input tk-input--with-icon" placeholder="Type something..." disabled/>
+              <input id="input4" type="text" class="tk-input tk-input--with-icon" placeholder="Type something..." disabled/>
               <div tabindex="0" class="tk-input__icon">
                 <i class="tk-icon-calendar "></i>
               </div>
@@ -98,13 +98,87 @@ export const TextField = () => {
     `;
 };
 
-export const Select = () => {
-  return `<select type="text" class="tk-input" value="Text" style="width:200px">
+export const Select = () => { return `
+<h3>Default</h3>
+<div class="tk-input__container">
+  <select type="text" class="tk-input" value="Text" style="width:200px">
     <option>Item 1</option>
     <option>Item 2</option>
     <option>Item 3</option>
-  </select>`;
-};
+  </select>
+  <i></i>
+</div>
+
+<div class="tk-input-group tk-mt-2">
+  <div class="tk-input-group__header">
+    <label for="input">Field label</label>
+  </div>
+  <div class="tk-input__container">
+    <select type="text" class="tk-input" value="Text" style="width:200px">
+      <option>Item 1</option>
+      <option>Item 2</option>
+      <option>Item 3</option>
+    </select>
+    <i></i>
+  </div>
+  <div class="tk-input__helper">This is a helper.</div>
+</div>
+<div>
+
+  <h3>Disabled</h3>
+  <div class="tk-input__container">
+    <select type="text" class="tk-input" value="Text" style="width:200px" disabled>
+      <option>Item 1</option>
+    </select>
+    <i></i>
+  </div>
+
+  <div class="tk-input-group tk-mt-2">
+    <div class="tk-input-group__header">
+      <label for="input">Field label</label>
+    </div>
+    <div class="tk-input__container">
+      <select type="text" class="tk-input" value="Text" style="width:200px" disabled>
+        <option>Item 1</option>
+        <option>Item 2</option>
+        <option>Item 3</option>
+      </select>
+      <i></i>
+    </div>
+    <div class="tk-input__helper">This is a helper.</div>
+  </div>
+</div>
+
+<h3>Error</h3>
+<span class="tk-validation tk-validation--error">
+  <div class="tk-input__container">
+    <select type="text" class="tk-input" value="Text" style="width:200px">
+      <option>Item 1</option>
+      <option>Item 2</option>
+      <option>Item 3</option>
+    </select>
+    <i></i>
+  </div>
+</span>
+
+<span class="tk-validation tk-validation--error">
+  <div class="tk-input-group tk-mt-2">
+    <div class="tk-input-group__header">
+      <label for="input">Field label</label>
+    </div>
+    <div class="tk-input__container">
+      <select type="text" class="tk-input" value="Text" style="width:200px">
+        <option>Item 1</option>
+        <option>Item 2</option>
+        <option>Item 3</option>
+      </select>
+      <i></i>
+    </div>
+  </div>
+  <div class="tk-input__helper">This is a helper.</div>
+</span>
+
+`};
 
 export const TextArea = () => {
   return `
