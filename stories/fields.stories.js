@@ -138,7 +138,7 @@ export const Select = () => { return `
       <label for="input">Field label</label>
     </div>
     <div class="tk-input__container">
-      <select type="text" class="tk-input" value="Text" style="width:200px" disabled>
+      <select type="text" class="tk-input tk-input--expanded" value="Text" style="width:200px" disabled>
         <option>Item 1</option>
         <option>Item 2</option>
         <option>Item 3</option>

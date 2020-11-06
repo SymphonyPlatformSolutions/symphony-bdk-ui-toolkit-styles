@@ -155,7 +155,8 @@ select.tk-input {
     font-size: 14px;
     @include tk-icon-drop-down;
   }
-  &+i.tk-input--expanded::before {
+
+  &--expanded+i::before {
     @include tk-icon-drop-up;
   }
 }
