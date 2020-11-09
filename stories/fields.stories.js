@@ -97,8 +97,7 @@ export const TextField = () => {
       </div>
     `;
 };
-
-export const Select = () => { return `
+ const Select = () => { return `
 <h3>Default</h3>
 <div class="tk-input__container">
   <select type="text" class="tk-input" value="Text" style="width:200px">
@@ -192,7 +191,7 @@ export const TextArea = () => {
     <textarea class="tk-input" cols="50" rows="5" disabled></textarea>`;
 };
 
-export const OptionsList = () => {
+const OptionsList = () => {
 return `
 <div class="tk-m-4">
   <h2>Options list</h2>
