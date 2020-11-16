@@ -12,7 +12,9 @@
   &::before {
     @include tk-icon-loading;
   }
+}
 
+.tk-loader {
   &--warning {
     color: $scolor-red !important;
   }

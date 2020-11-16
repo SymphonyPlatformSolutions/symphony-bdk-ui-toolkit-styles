@@ -2,7 +2,7 @@ export default {
   title: 'Loader',
 };
 
-export const Indeterminate = () => 
+export const Spinner = () => 
 `
 <div class="tk-ml-2">
 <div class="tk-ml-2">
@@ -10,10 +10,10 @@ export const Indeterminate = () =>
   <i class="tk-loader-spinner"></i>
   <h3 class="tk-mt-5">Variants</h3>
 
-  <i class="tk-loader-spinner tk-loader-spinner--primary"></i>
-  <i class="tk-loader-spinner tk-loader-spinner--ok tk-ml-2h"></i>
-  <i class="tk-loader-spinner tk-loader-spinner--warning tk-ml-2h"></i>
-  <i class="tk-loader-spinner tk-loader-spinner--attention tk-ml-2h "></i>
+  <i class="tk-loader-spinner tk-loader--primary"></i>
+  <i class="tk-loader-spinner tk-loader--ok tk-ml-2h"></i>
+  <i class="tk-loader-spinner tk-loader--warning tk-ml-2h"></i>
+  <i class="tk-loader-spinner tk-loader--attention tk-ml-2h "></i>
 
   <h3 class="tk-mt-5">Sizes</h3>
   <i class="tk-loader-spinner tk-size-xx-small"></i>
