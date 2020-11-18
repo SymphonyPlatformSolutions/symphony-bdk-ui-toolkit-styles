@@ -113,7 +113,7 @@ export const Select = () => { return `
     <label for="input">Field label</label>
   </div>
   <div class="tk-select__container">
-    <select type="text" class="tk-input" value="Text" style="width:200px">
+    <select type="text" class="tk-select" value="Text" style="width:200px">
       <option>Item 1</option>
       <option>Item 2</option>
       <option>Item 3</option>
@@ -166,7 +166,7 @@ export const Select = () => { return `
       <label for="input">Field label</label>
     </div>
     <div class="tk-select__container">
-      <select type="text" class="tk-input" value="Text" style="width:200px">
+      <select type="text" class="tk-select" value="Text" style="width:200px">
         <option>Item 1</option>
         <option>Item 2</option>
         <option>Item 3</option>
