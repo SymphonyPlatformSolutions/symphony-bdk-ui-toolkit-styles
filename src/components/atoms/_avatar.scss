@@ -8,21 +8,7 @@ $avatar-sizes: ("xsmall": 16px, "small": 24px, "medium": 32px, "large": 40px, "x
   border-radius: 50%; // Default rounded avatar
   align-items: center;
   justify-content: center;
-
-  img {
-    border-radius: inherit;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  &--square {
-    border-radius: 4px;
-  }
-
-  &--rounded {
-    border-radius: 50%;
-  }
+  user-select: none;
 
   @each $size,
   $size-value in $avatar-sizes {
@@ -44,20 +30,65 @@ $avatar-sizes: ("xsmall": 16px, "small": 24px, "medium": 32px, "large": 40px, "x
           border-width: thick;
         }
       }
-
-      // .tk-avatar__badge {
-      //   position: absolute;
-      //   font-size: 14px;
-
-      //   &--bottom {
-      //     @if($size-value > map-get($avatar-sizes, "xlarge")) {
-      //       left: 140px;
-      //       top: 140px;
-      //     }
-
-      //     &--top {}
-      //   }
-      // }
     }
+  }
+
+  .tk-badge {
+    :not(.tk-icon) {
+      width: 50%;
+      height: 50%;
+    }
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+
+    &--bottom {
+      right: 13.64%;
+      bottom: 13.64%;
+      transform: translate(50%, 50%);
+    }
+
+    &--top {
+      right: 14.64%;
+      top: 14.64%;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  &--square {
+    border-radius: 4px;
+    &[class*="--border"]img.tk-avatar {
+      border-radius: 0;
+    }
+
+    .tk-badge--bottom {
+      right: 0;
+      bottom: 10%;
+    }
+
+    .tk-badge--top {
+      top: 0;
+      right: 2%;
+    }
+  }
+
+  &--rounded {
+    border-radius: 50%;
+  }
+
+  img.tk-avatar,
+  img.tk-badge {
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: $z-index-avatar;
+  }
+
+  img.tk-badge {
+    z-index: $z-index-badge;
   }
 }
