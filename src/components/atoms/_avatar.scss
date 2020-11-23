@@ -1,9 +1,9 @@
-$avatar-sizes: ("xsmall": 16px, "small": 24px, "medium": 32px, "large": 40px, "xlarge": 80px, "xxlarge": 160px);
+$avatar-sizes: ("xsmall": toEm(16), "small": toEm(24), "medium":  toEm(32), "large":  toEm(40), "xlarge":  toEm(80), "xxlarge":  toEm(160));
 
 .tk-avatar {
   width: map-get($avatar-sizes, "medium");
   height: map-get($avatar-sizes, "medium");
-  display: flex;
+  display: inline-flex;
   position: relative;
   border-radius: 50%; // Default rounded avatar
   align-items: center;
@@ -15,7 +15,6 @@ $avatar-sizes: ("xsmall": 16px, "small": 24px, "medium": 32px, "large": 40px, "x
     &--#{$size} {
       width: $size-value;
       height: $size-value;
-      font-size: $size-value/2;
 
       &[class*="--border"] {
         border-style: solid;
@@ -34,13 +33,9 @@ $avatar-sizes: ("xsmall": 16px, "small": 24px, "medium": 32px, "large": 40px, "x
   }
 
   .tk-badge {
-    :not(.tk-icon) {
-      width: 50%;
-      height: 50%;
-    }
     overflow: hidden;
     position: absolute;
-    z-index: 2;
+    z-index: $z-index-badge;
     align-items: center;
     justify-content: center;
     user-select: none;
@@ -79,8 +74,7 @@ $avatar-sizes: ("xsmall": 16px, "small": 24px, "medium": 32px, "large": 40px, "x
     border-radius: 50%;
   }
 
-  img.tk-avatar,
-  img.tk-badge {
+  & > img {
     border-radius: inherit;
     height: 100%;
     width: 100%;
@@ -88,7 +82,10 @@ $avatar-sizes: ("xsmall": 16px, "small": 24px, "medium": 32px, "large": 40px, "x
     z-index: $z-index-avatar;
   }
 
-  img.tk-badge {
-    z-index: $z-index-badge;
+  &__clip-path {
+    position: absolute;
+    width: 0;
+    height: 0;
   }
+
 }
