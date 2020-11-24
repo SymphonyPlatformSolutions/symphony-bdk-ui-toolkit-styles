@@ -84,8 +84,9 @@ $--tk-dialog-backdrop-color: var(--tk-dialog-backdrop-color, $scolor-dialog-back
 
 /** ======== List ======== */
 $--tk-select-background-color: var(--tk-select-background-color, $scolor-white);
-$--tk-select-hover-color: var(--tk-select-hover-color,$scolor-graphite-minus-72);
+$--tk-select-hover-color: var(--tk-select-hover-color,$scolor-graphite-minus-88);
 $--tk-select-selected-color: var(--tk-select-selected-color,$scolor-graphite-minus-24);
+$--tk-dropdown-divider-color: var(--tk-dropdown-divider-color,$scolor-graphite-minus-88);
 
 /** ======== Avatar ======== */
 $--tk-avatar-border-color: var(--tk-avatar-border-color,$scolor-graphite-minus-88);

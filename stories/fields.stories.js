@@ -200,7 +200,7 @@ return `
     <div class="tk-select--custom-dropdown__option">Option 1</div>
     <div class="tk-select--custom-dropdown__option">Option 2</div>
     <div class="tk-select--custom-dropdown__option">Option 3
-      <i class="tk-select--custom-dropdown__option--selected"></i>
+      <i class="tk-select--custom-dropdown--selected"></i>
     </div>
     <div class="tk-select--custom-dropdown__option">Option 4</div>
     <div class="tk-select--custom-dropdown__option">Option 5</div>
