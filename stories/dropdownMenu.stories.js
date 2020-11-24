@@ -10,67 +10,56 @@ export const DropdownList = () => {
     <div class="flex-col tk-mr-5h">
       <h3>Default</h3>
       <div class="tk-dropdown-menu" style="width:200px">
-        <div class="tk-dropdown-menu__item">New direct chat
-        </div>
-        <div class="tk-dropdown-menu__item">New room...
-        </div>
-        <div class="tk-dropdown-divider"></div>
-        <div class="tk-dropdown-menu__item">Cut
-
-        </div>
+        <div class="tk-dropdown-menu__item">New direct chat</div>
+        <div class="tk-dropdown-menu__item">New room...</div>
+        <div class="tk-dropdown-menu-divider"></div>
+        <div class="tk-dropdown-menu__item">Cut</div>
         <div class="tk-dropdown-menu__item">Copy
           <i class="tk-dropdown-menu--selected"></i>
         </div>
-        <div class="tk-dropdown-menu__item">Paste
-        </div>
-        <div class="tk-dropdown-divider"></div>
-        <div class="tk-dropdown-menu__item">Full screen
-
-        </div>
-        <div class="tk-dropdown-menu__item">Minimize
-
-        </div>
+        <div class="tk-dropdown-menu__item">Paste</div>
+        <div class="tk-dropdown-menu-divider"></div>
+        <div class="tk-dropdown-menu__item">Full screen</div>
+        <div class="tk-dropdown-menu__item">Minimize</div>
       </div>
     </div>
     <div class="flex-col tk-mr-5h">
       <h3>With icons</h3>
       <div class="tk-dropdown-menu" style="width:200px">
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">New direct chat
-          <i class="tk-dropdown-menu__icon tk-icon-plus"></i></div>
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">New room...
-          <i class="tk-dropdown-menu__icon tk-icon-chats"></i></div>
-        <div class="tk-dropdown-divider"></div>
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">Cut
-          <i class="tk-dropdown-menu__icon tk-icon-minus-round"></i>
+        <div class="tk-dropdown-menu__item">
+          <i class="tk-dropdown-menu__icon tk-icon-plus"></i>
+          New direct chat
         </div>
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">Copy
-          <i class="tk-dropdown-menu__icon tk-icon-copy"></i>
-        </div>
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">Paste
-          <i class="tk-dropdown-menu__icon tk-icon-forward"></i>
+        <div class="tk-dropdown-menu__item">
+        <i class="tk-dropdown-menu__icon tk-icon-chats"></i>New room...</div>
+        <div class="tk-dropdown-menu-divider"></div>
+        <div class="tk-dropdown-menu__item">
+          <i class="tk-dropdown-menu__icon tk-icon-minus-round"></i>Cut</div>
+        <div class="tk-dropdown-menu__item">
+          <i class="tk-dropdown-menu__icon tk-icon-copy"></i>Copy</div>
+        <div class="tk-dropdown-menu__item">
+          <i class="tk-dropdown-menu__icon tk-icon-forward"></i>Paste
           <i class="tk-dropdown-menu--selected"></i>
         </div>
-        <div class="tk-dropdown-divider"></div>
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">Full screen
-          <i class="tk-dropdown-menu__icon tk-icon-fullscreen-on"></i>
-        </div>
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">Minimize
-          <i class="tk-dropdown-menu__icon tk-icon-fullscreen-off"></i>
-        </div>
+        <div class="tk-dropdown-menu-divider"></div>
+        <div class="tk-dropdown-menu__item">
+          <i class="tk-dropdown-menu__icon tk-icon-fullscreen-on"></i>Full screen</div>
+        <div class="tk-dropdown-menu__item">
+          <i class="tk-dropdown-menu__icon tk-icon-fullscreen-off"></i>Minimize</div>
       </div>
     </div>
     <div class="flex-col">
       <h3>Expandable</h3>
       <div class="tk-dropdown-menu" style="width:200px">
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">Star
-          <i class="tk-dropdown-menu__icon tk-icon-star"></i></div>
-          <div class="tk-dropdown-divider"></div>
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">Move to
+        <div class="tk-dropdown-menu__item">
+          <i class="tk-dropdown-menu__icon tk-icon-star"></i>Star</div>
+          <div class="tk-dropdown-menu-divider"></div>
+        <div class="tk-dropdown-menu__item tk-pl-5">Move to
         <i class="tk-dropdown-menu--expandable"></i>
         </div>
-        <div class="tk-dropdown-divider"></div>
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">Hide</div>
-        <div class="tk-dropdown-menu__item tk-dropdown-menu__item--icon">Mute
+        <div class="tk-dropdown-menu-divider"></div>
+        <div class="tk-dropdown-menu__item tk-pl-5">Hide</div>
+        <div class="tk-dropdown-menu__item tk-pl-5">Mute
           <i class="tk-dropdown-menu--selected"></i>
         </div>
       </div>

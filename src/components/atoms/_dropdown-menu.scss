@@ -1,41 +1,17 @@
 .tk-dropdown-menu {
-  @extend .tk-select--custom-dropdown;
-  max-height: 515px;
+  @include listStyle;
   z-index: $z-index-dropdown-menu;
+  @extend .tk-py-1;
 
   &__icon {
-    position: absolute;
-    left: 16px;
-    color: $--tk-select-selected-color;
-    font-size: 16px;
+    color: $--tk-list-selected-color;
+    font-size:$list-font-size-icon;
+    @extend .tk-pr-1;
   }
 
   &__item {
-    position: relative;
-    color: $--tk-main-text-color;
-    display: block;
-    cursor: pointer;
-    @extend .tk-py-1;
-    @extend .tk-pl-2;
     @extend .tk-pr-4h;
-
-    &:hover {
-      background-color: $--tk-select-hover-color;
-    }
-
-    &--icon {
-      @extend .tk-pl-5;   
-    }
-  }
-
-  &--selected::before {
-    position: absolute;
-    right: 16px;
-    font-style: normal;
-    font-family: 'tk-icons';
-    color: $--tk-select-selected-color;
-    font-size: 16px;
-    @include tk-icon-check;
+    @extend .tk-py-1;
   }
 
   &--expandable::before {
@@ -43,15 +19,15 @@
     right: 16px;
     font-style: normal;
     font-family: 'tk-icons';
+    font-size: $list-font-size-icon;
     color: $scolor-electricity;
-    font-size: 16px;
     @include tk-icon-right;
   }
 }
 
-.tk-dropdown-divider {
+.tk-dropdown-menu-divider {
   height: 0;
   margin: .4em 0;
   overflow: hidden;
-  border-top: 1px solid $--tk-dropdown-divider-color;
+  border-top: 1px solid $--tk-list-divider-color;
 }
