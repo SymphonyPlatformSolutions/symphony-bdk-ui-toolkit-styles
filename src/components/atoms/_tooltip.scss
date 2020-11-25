@@ -1,42 +1,4 @@
-$fontSizeTooltip: 12;
-$fontSizeHint: 14;
-$backgroundColor: $scolor-graphite-plus-48;
-
-.tk-hint {
-  z-index: $z-index-tooltip;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  border-radius: 8px;
-  background-color: $backgroundColor;
-  font-size: #{$fontSizeHint}px;
-  padding: toEm(16, $fontSizeHint);
-  text-align: left;
-  color: $scolor-graphite-minus-96;
-  line-height: toEm(20, $fontSizeHint);
-  white-space: pre-line;
-  min-width: toEm(200, $fontSizeHint);
-  max-width: toEm(500, $fontSizeHint);
-
-  &__arrow {
-    $arrowSize:toEm(24,$fontSizeHint);
-    width: $arrowSize;
-    height: $arrowSize;
-    background-color: $backgroundColor;
-  }
-
-  &__footer {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: toEm(8, $fontSizeHint);
-  }
-
-  &__close {
-    color: $scolor-white;
-    text-transform: uppercase;
-    padding: toEm(8, $fontSizeHint) toEm(16, $fontSizeHint);
-  }
-}
+$fontSize: 14;
 
 .tk-tooltip {
   background-color: $scolor-midnight;
@@ -45,13 +7,13 @@ $backgroundColor: $scolor-graphite-plus-48;
   color: $scolor-graphite-minus-96;
   display: flex;
   flex-direction: column;
-  font-size: #{$fontSizeTooltip}px;
+  font-size: #{$fontSize}px;
   justify-content: space-between;
-  line-height: toEm(16, $fontSizeTooltip);
-  padding-bottom: toEm(2, $fontSizeTooltip);
-  padding-left: toEm(8, $fontSizeTooltip);
-  padding-right: toEm(8, $fontSizeTooltip);
-  padding-top: toEm(2, $fontSizeTooltip);
+  line-height: toEm(16, $fontSize);
+  padding-bottom: toEm(2, $fontSize);
+  padding-left: toEm(8, $fontSize);
+  padding-right: toEm(8, $fontSize);
+  padding-top: toEm(2, $fontSize);
   text-align: center;
   width: fit-content;
   z-index: $z-index-tooltip;
