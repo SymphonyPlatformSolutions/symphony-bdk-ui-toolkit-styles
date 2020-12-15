@@ -1,5 +1,5 @@
 export default {
-  title: 'Tables',
+  title: 'Components/Table',
 };
 
 export const Tables = () =>

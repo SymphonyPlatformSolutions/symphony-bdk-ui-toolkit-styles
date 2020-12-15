@@ -1,5 +1,5 @@
 export default {
-  title: 'Input fields',
+  title: 'Components/Inputs/fields',
 };
 
 export const TextField = () => {

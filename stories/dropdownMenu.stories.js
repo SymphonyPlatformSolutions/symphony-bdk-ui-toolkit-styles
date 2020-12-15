@@ -1,5 +1,5 @@
 export default {
-  title: 'Dropdown Menu',
+  title: 'Components/Dropdown Menu',
 };
 
 export const DropdownList = () => {

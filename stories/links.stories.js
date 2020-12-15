@@ -1,5 +1,5 @@
 export default {
-  title: 'Link',
+  title: 'Components/Link',
 };
 
 export const Links = () => `
