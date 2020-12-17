@@ -2,7 +2,7 @@ export default {
   title: 'Components/Dropdown Menu',
 };
 
-export const DropdownList = () => {
+export const DropdownMenu = () => {
   return `
   <div class="tk-m-4">
   <h2>Dropdown Menu</h2>

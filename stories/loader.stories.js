@@ -1,5 +1,5 @@
 export default {
-  title: 'Components/Loader',
+  title: 'Components/Spinner',
 };
 
 export const Spinner = () => 

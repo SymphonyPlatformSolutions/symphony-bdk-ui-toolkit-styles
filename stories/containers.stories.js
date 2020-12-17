@@ -1,5 +1,5 @@
 export default {
-  title: 'Components/Containers',
+  title: 'Components/Quote',
 };
 
 export const Quote = () => `
