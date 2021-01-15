@@ -83,9 +83,10 @@ $--tk-dialog-backdrop-color: var(--tk-dialog-backdrop-color, $scolor-dialog-back
 
 /** ======== List ======== */
 $--tk-list-background-color: var(--tk-list-background-color, $scolor-white);
-$--tk-list-hover-color: var(--tk-list-hover-color,$scolor-graphite-minus-88);
-$--tk-list-selected-color: var(--tk-list-selected-color,$scolor-graphite-minus-24);
-$--tk-list-divider-color: var(--tk-list-divider-color,$scolor-graphite-minus-88);
+$--tk-list-hover-color: var(--tk-list-hover-color, $scolor-graphite-minus-88);
+$--tk-list-selected-color: var(--tk-list-selected-color, $scolor-graphite-minus-24);
+$--tk-list-divider-color: var(--tk-list-divider-color, $scolor-graphite-minus-88);
+$--tk-list-tag-color: var(--tk-list-tag-color, $scolor-graphite-minus-89);
 
 /** ======== Avatar ======== */
-$--tk-avatar-border-color: var(--tk-avatar-border-color,$scolor-graphite-minus-88);
+$--tk-avatar-border-color: var(--tk-avatar-border-color, $scolor-graphite-minus-88);
