@@ -1,4 +1,4 @@
-# Contributing to UIToolkit Styles
+# 💪 Contributing to UIToolkit Styles
 
 The following is a set of guidelines for contributing to UIToolkit Styles library. These are mostly guidelines, not rules, so feel free to suggest improvements of the following
 
