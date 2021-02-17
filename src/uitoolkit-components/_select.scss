@@ -49,8 +49,8 @@
         .tk-select__multi-value {
           padding: 0;
           box-sizing: border-box;
-          min-height: toEm(24, $fontSize);
-          border-radius: toEm(4, $fontSize);
+          min-height: toEm(24);
+          border-radius: toEm(4);
           background: $--tk-tag-background-color;
           border: 1px solid $--tk-tag-border-and-group-heading-color;
           color: $--tk-main-text-color;
@@ -60,7 +60,7 @@
           }
           &__label {
             color: $--tk-main-text-color;
-            padding: toEm(2, $fontSize);
+            padding: toEm(2);
             font-size: toEm(12);
             .tk-icon-cross {
               font-size: toEm(10);
@@ -93,7 +93,7 @@
     }
     &__menu {
       background-color: $--tk-select-background-color;
-      margin-top: toEm(6, $fontSize);
+      margin-top: toEm(6);
     }
     &__option {
       cursor: pointer;
@@ -117,7 +117,7 @@
     }
     &__group-heading {
       color: $--tk-tag-border-and-group-heading-color;
-      font-size: toEm(12, $fontSize);
+      font-size: toEm(12);
       line-height: toEm(16);
       font-weight: 600;
     }
@@ -146,10 +146,10 @@
   }
   .tk-input__container {
     &.tk-select__control {
-      min-height: toEm(36, $fontSize);
+      min-height: toEm(36);
       .tk-select__value-container {
         cursor: text;
-        margin-left: toEm(32, $fontSize);
+        margin-left: toEm(32);
       }
     }
   }
