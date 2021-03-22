@@ -15,10 +15,8 @@
         position: relative;
         @extend .tk-input__container;
         &--is-focused {
-          .tk-input__icon {
-            background-color: $--tk-input-default-inactive-color;
-            border-color: $--tk-input-default-inactive-color;
-          }
+          border-color: $--tk-input-default-focus-border-color;
+          box-shadow: inset 0 0 0 2px $--tk-input-default-focus-border-color;
           .tk-validation--error & {
             box-shadow: inset 0 0 0 2px $--tk-input-error-focus-border-color;
             border-color: $--tk-input-error-focus-border-color;
