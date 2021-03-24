@@ -1,5 +1,4 @@
 // Avatar sizes defined by the Symphony design system
-$default-size: "medium";
 $avatar-font-sizes: (
   "xsmall": 8,
   "small": 12,
@@ -17,6 +16,7 @@ $avatar-sizes: (
   "xlarge": 80,
   "xxlarge": 160,
 );
+$default-font-size: map-get($avatar-font-sizes, "medium");
 
 .tk-avatar {
   display: inline-flex;
@@ -25,17 +25,9 @@ $avatar-sizes: (
   align-items: center;
   justify-content: center;
   user-select: none;
-  width: toEm(
-    map-get($avatar-sizes, $default-size),
-    map-get($avatar-font-sizes, $default-size)
-  );
-  height: toEm(
-    map-get($avatar-sizes, $default-size),
-    map-get($avatar-font-sizes, $default-size)
-  );
-  font-size: toEm(
-    map-get($avatar-font-sizes, $default-size)
-  ); //Default fontsize
+  width: toEm(map-get($avatar-sizes, "medium"), $default-font-size);
+  height: toEm(map-get($avatar-sizes, "medium"), $default-font-size);
+  font-size: toEm($default-font-size); //Default fontsize
   text-align: center;
 
   @each $size, $size-value in $avatar-font-sizes {
@@ -49,7 +41,7 @@ $avatar-sizes: (
         border-color: $--tk-avatar-border-color;
         border-width: medium;
 
-        @if ($size-value < map-get($avatar-font-sizes, $default-size)) {
+        @if ($size-value < $default-font-size) {
           border-width: thin;
         } @else if($size-value > map-get($avatar-font-sizes, "large")) {
           border-width: thick;
