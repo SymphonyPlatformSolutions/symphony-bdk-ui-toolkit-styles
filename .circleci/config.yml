@@ -20,6 +20,7 @@ jobs:
       - run: echo "registry=$SYM_NPM_READ_REPO" > ~/.npmrc
       - run: echo "_auth=$SYM_NPM_TOKEN" >> ~/.npmrc
       - run: echo "always-auth=true" >> ~/.npmrc
+      - run: more ~/.npmrc
       - run: yarn
       - run: yarn build
       - run: bash ./publish.sh
