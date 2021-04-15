@@ -5,7 +5,7 @@ $fontSize: 14;
 }
 
 textarea.tk-input {
-  $height: toEm(110);
+  $height: toRem(110);
   min-height: $height;
   text-overflow: ellipsis;
 }
@@ -15,12 +15,12 @@ textarea.tk-input {
   width: 100%;
   box-sizing: border-box;
   font-family: inherit;
-  font-size: toEm($fontSize);
-  line-height: toEm(20);
-  padding: toEm(8) toEm(8) toEm(8) toEm(8);
+  font-size: toRem($fontSize);
+  line-height: toRem(20);
+  padding: toRem(8) toRem(8) toRem(8) toRem(8);
   background-color: transparent;
   border-color: transparent;
-  border-radius: toEm(4);
+  border-radius: toRem(4);
   border: none;
   outline: none;
   @include addTransition();
@@ -60,7 +60,7 @@ textarea.tk-input {
 
   background-color: transparent;
   border-color: transparent;
-  border-radius: toEm(4);
+  border-radius: toRem(4);
   border: none;
   outline: none;
   @include addTransition();
@@ -118,27 +118,27 @@ textarea.tk-input {
     box-shadow: none !important; // force cancel tk-input border
     padding: 0;
     flex-grow: 1;
-    margin: toEm(7) toEm(12);
-    line-height: toEm(20);
+    margin: toRem(8) toRem(12);
+    line-height: toRem(20);
     &__icon {
       order: -1;
       display: flex;
       justify-content: center;
       align-items: center;
 
-      min-width: toEm(32);
-      width: toEm(32);
-      height: toEm(32);
+      min-width: toRem(32);
+      width: toRem(32);
+      height: toRem(36);
 
-      border-radius: toEm(4) 0 0 toEm(4);
+      border-radius: toRem(4) 0 0 toRem(4);
       color: $scolor-white;
       @include addTransition();
     }
 
     &__hide {
       height: 100%;
-      max-height: toEm(39);
-      margin-right: toEm(8);
+      max-height: toRem(39);
+      margin-right: toRem(8);
       background-color: transparent;
       color: $scolor-electricity;
       border: none;
@@ -151,7 +151,7 @@ textarea.tk-input {
 
     &__helper {
       @extend .tk-label;
-      margin-top: toEm(4);
+      margin-top: toRem(4);
     }
   }
 }

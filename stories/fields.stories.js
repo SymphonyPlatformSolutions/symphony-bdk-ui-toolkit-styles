@@ -19,16 +19,6 @@ export const TextField = () => {
             <div class="tk-input__helper">This is a helper.</div>
           </div>
           <hr/>
-          <p>Text Field with a show/hide button.</p>  
-          <div class="tk-input-group">
-            <div class="tk-input-group__header">
-              <label for="input">Field label</label>    
-            </div>
-            <div class="tk-input__container">
-              <input id="input1" type="password" class="tk-input" placeholder="Type something..." />
-              <button class="tk-input__hide">Hide</button>
-            </div>
-          </div>
           <p>Text Field with a icon button.</p>  
           <div class="tk-input-group">
             <div class="tk-input-group__header">

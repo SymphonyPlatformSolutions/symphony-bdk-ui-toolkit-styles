@@ -5,7 +5,7 @@ $fontSize: 12;
   display: block;
   font-size: toEm($fontSize);
   line-height: toEm(16, $fontSize);
-  // color: $--tk-input-default-inactive-color;
+  color: $--tk-input-default-inactive-color;
   &:hover,
   .tk-validation--error &:hover,
   &--error:hover {

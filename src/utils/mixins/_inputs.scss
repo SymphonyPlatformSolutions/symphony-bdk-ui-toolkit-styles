@@ -29,7 +29,6 @@
     @include addBorder(2px, $focusBorderColor);
   }
 
-  // .tk-input__container:focus-within &,
   &:focus-within {
     @include addBorder(2px, $focusBorderColor);
   }
