@@ -33,7 +33,7 @@ textarea.tk-input {
     $--tk-input-default-background-color
   );
 
-  .tk-validation--error & {
+  .tk-validation--error :not(.tk-input__container) > & {
     @include styleInput(
       $--tk-input-error-inactive-color,
       $--tk-input-error-focus-border-color,
@@ -115,11 +115,17 @@ textarea.tk-input {
     );
   }
   .tk-input {
-    box-shadow: none !important; // force cancel tk-input border
+    box-shadow: none; // force cancel tk-input border
     padding: 0;
     flex-grow: 1;
     margin: toRem(8) toRem(12);
     line-height: toRem(20);
+
+    .tk-validation--error & {
+      color: $--tk-input-error-active-color;
+      background-color: $--tk-input-error-background-color;
+    }
+
     &__icon {
       order: -1;
       display: flex;
@@ -171,4 +177,3 @@ textarea.tk-input {
     @extend .tk-label--error;
   }
 }
-
