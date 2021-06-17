@@ -1,0 +1,33 @@
+$interpolationMap: (graphite, midnight, electricity, green, yellow, red);
+
+$mainBrandColorsMap: (
+  electricity,
+  midnight,
+  white,
+  orange,
+  lime,
+  plum,
+  rose,
+  black
+);
+
+@each $color in $interpolationMap {
+  body {
+    --#{$color}-05: $scolor-#{$color}-05;
+    --#{$color}-10: $scolor-#{$color}-10;
+    --#{$color}-20: $scolor-#{$color}-20;
+    --#{$color}-30: $scolor-#{$color}-30;
+    --#{$color}-40: $scolor-#{$color}-40;
+    --#{$color}-50: $scolor-#{$color}-50;
+    --#{$color}-60: $scolor-#{$color}-60;
+    --#{$color}-70: $scolor-#{$color}-70;
+    --#{$color}-80: $scolor-#{$color}-80;
+    --#{$color}-90: $scolor-#{$color}-90;
+  }
+}
+
+@each $color in $mainBrandColorsMap {
+  body {
+    --#{$color}: $scolor-#{$color};
+  }
+}
