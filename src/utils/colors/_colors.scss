@@ -9,7 +9,10 @@ $colorMap: (
     .tk-color-action-#{$name} {
       color: $color !important;
     }
-    .tk-text-color-#{$name} {
+    .tk-text-color-#{$name} { // deprecated
+      color: $color !important;
+    }
+    .tk-text-color--#{$name} {
       color: $color !important;
     }
     .tk-bg-color--#{$name} {

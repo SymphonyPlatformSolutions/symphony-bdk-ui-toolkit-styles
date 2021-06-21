@@ -1,33 +1,130 @@
-$interpolationMap: (graphite, midnight, electricity, green, yellow, red);
+// $interpolationMap: (graphite, midnight, electricity, green, yellow, red);
 
-$mainBrandColorsMap: (
-  electricity,
-  midnight,
-  white,
-  orange,
-  lime,
-  plum,
-  rose,
-  black
-);
+// $mainBrandColorsMap: (
+//   electricity,
+//   midnight,
+//   white,
+//   orange,
+//   lime,
+//   plum,
+//   rose,
+//   black
+// );
 
-@each $color in $interpolationMap {
-  body {
-    --#{$color}-05: $scolor-#{$color}-05;
-    --#{$color}-10: $scolor-#{$color}-10;
-    --#{$color}-20: $scolor-#{$color}-20;
-    --#{$color}-30: $scolor-#{$color}-30;
-    --#{$color}-40: $scolor-#{$color}-40;
-    --#{$color}-50: $scolor-#{$color}-50;
-    --#{$color}-60: $scolor-#{$color}-60;
-    --#{$color}-70: $scolor-#{$color}-70;
-    --#{$color}-80: $scolor-#{$color}-80;
-    --#{$color}-90: $scolor-#{$color}-90;
-  }
-}
+// @each $color in $interpolationMap {
+//   body {
+//     --tk-#{$color}-05: $scolor-#{$color}-05;
+//     --tk-#{$color}-10: $scolor-#{$color}-10;
+//     --tk-#{$color}-20: $scolor-#{$color}-20;
+//     --tk-#{$color}-30: $scolor-#{$color}-30;
+//     --tk-#{$color}-40: $scolor-#{$color}-40;
+//     --tk-#{$color}-50: $scolor-#{$color}-50;
+//     --tk-#{$color}-60: $scolor-#{$color}-60;
+//     --tk-#{$color}-70: $scolor-#{$color}-70;
+//     --tk-#{$color}-80: $scolor-#{$color}-80;
+//     --tk-#{$color}-90: $scolor-#{$color}-90;
+//   }
+// }
 
-@each $color in $mainBrandColorsMap {
-  body {
-    --#{$color}: $scolor-#{$color};
+// @each $color in $mainBrandColorsMap {
+//   body {
+//     --tk-#{$color}: $scolor-#{$color};
+//   }
+// }
+
+// $interpolationMap: (
+//   // Graphite
+//     'graphite-05': #f1f1f2,
+//   'graphite-10': $scolor-graphite-10,
+//   'graphite-20': $scolor-graphite-20,
+//   'graphite-30': $scolor-graphite-30,
+//   'graphite-40': $scolor-graphite-40,
+//   'graphite-50': $scolor-graphite-50,
+//   'graphite-60': $scolor-graphite-60,
+//   'graphite-70': $scolor-graphite-70,
+//   'graphite-80': $scolor-graphite-80,
+//   'graphite-90': $scolor-graphite-90,
+//   // Midnight
+//     'midnight-05': $scolor-midnight-05,
+//   'midnight-10': $scolor-midnight-10,
+//   'midnight-20': $scolor-midnight-20,
+//   'midnight-30': $scolor-midnight-30,
+//   'midnight-40': $scolor-midnight-40,
+//   'midnight-50': $scolor-midnight-50,
+//   'midnight-60': $scolor-midnight-60,
+//   'midnight-70': $scolor-midnight-70,
+//   'midnight-80': $scolor-midnight-80,
+//   'midnight-90': $scolor-midnight-90,
+//   // Electricity
+//     'electricity-05': $scolor-electricity-05,
+//   'electricity-10': $scolor-electricity-10,
+//   'electricity-20': $scolor-electricity-20,
+//   'electricity-30': $scolor-electricity-30,
+//   'electricity-40': $scolor-electricity-40,
+//   'electricity-50': $scolor-electricity-50,
+//   'electricity-60': $scolor-electricity-60,
+//   'electricity-70': $scolor-electricity-70,
+//   'electricity-80': $scolor-electricity-80,
+//   'electricity-90': $scolor-electricity-90,
+//   // Green
+//     'green-05': $scolor-green-05,
+//   'green-10': $scolor-green-10,
+//   'green-20': $scolor-green-20,
+//   'green-30': $scolor-green-30,
+//   'green-40': $scolor-green-40,
+//   'green-50': $scolor-green-50,
+//   'green-60': $scolor-green-60,
+//   'green-70': $scolor-green-70,
+//   'green-80': $scolor-green-80,
+//   'green-90': $scolor-green-90,
+//   // Yellow
+//     'yellow-05': $scolor-yellow-05,
+//   'yellow-10': $scolor-yellow-10,
+//   'yellow-20': $scolor-yellow-20,
+//   'yellow-30': $scolor-yellow-30,
+//   'yellow-40': $scolor-yellow-40,
+//   'yellow-50': $scolor-yellow-50,
+//   'yellow-60': $scolor-yellow-60,
+//   'yellow-70': $scolor-yellow-70,
+//   'yellow-80': $scolor-yellow-80,
+//   'yellow-90': $scolor-yellow-90,
+//   // Red
+//     'red-05': $scolor-red-05,
+//   'red-10': $scolor-red-10,
+//   'red-20': $scolor-red-20,
+//   'red-30': $scolor-red-30,
+//   'red-40': $scolor-red-40,
+//   'red-50': $scolor-red-50,
+//   'red-60': $scolor-red-60,
+//   'red-70': $scolor-red-70,
+//   'red-80': $scolor-red-80,
+//   'red-90': $scolor-red-90,
+//   // Main brand colors"graphite":
+//     'electricity': $scolor-electricity,
+//   'midnight': $scolor-midnight,
+//   // Additional brand colors
+//     'white': $scolor-white,
+//   'orange': $scolor-orange,
+//   'lime': $scolor-lime,
+//   'plum': $scolor-plum,
+//   'rose': $scolor-rose,
+//   'black': $scolor-black
+// );
+
+// body {
+//   @each $name in $colors {
+//       --tk-#{$name}: #{$color};
+//   }
+// }
+
+body {
+  @each $name, $map in $colors {
+    @each $scale, $color in $map {
+      @if $scale != '' {
+        --tk-#{$name}-#{$scale}: #{$color};
+      } @else {
+        --tk-#{$name}: #{$color};
+      }
+    }
   }
 }
