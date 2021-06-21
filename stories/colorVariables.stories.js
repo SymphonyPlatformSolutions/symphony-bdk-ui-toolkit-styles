@@ -1,5 +1,5 @@
 export default {
-  title: 'Utils/Variables',
+  title: 'Utils/Color\ Variables',
 };
 
 const colors = [
@@ -24,7 +24,7 @@ const mainColors = [
 
 const scales = ['05', '10', '20', '30', '40', '50', '60', '70', '80', '90'];
 
-export const Variables = () => {
+export const ColorVariables = () => {
   return `<div> <h2>Main colors</h2>
   <p>Click to copy the variable to your clipboard</p>
     ${mainColors.map((color) => {
