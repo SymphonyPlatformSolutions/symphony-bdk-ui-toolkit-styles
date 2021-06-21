@@ -26,8 +26,6 @@
 
   &--primary {
     @include styleFilledButton($--tk-button-color-primary);
-    // background: getColor($graphite, 05);
-    // background: $scolor-graphite-05;
   }
   &--secondary {
     @include styleOutlinedButton($--tk-button-color-secondary);
