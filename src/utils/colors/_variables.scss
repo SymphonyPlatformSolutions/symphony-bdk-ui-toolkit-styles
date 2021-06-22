@@ -2,9 +2,9 @@ body {
   @each $name, $map in $colors {
     @each $scale, $color in $map {
       @if $scale != '' {
-        --tk-#{$name}-#{$scale}: #{$color};
+        --tk-color-#{$name}-#{$scale}: #{$color};
       } @else {
-        --tk-#{$name}: #{$color};
+        --tk-color-#{$name}: #{$color};
       }
     }
   }
