@@ -7,7 +7,7 @@
   font-size: toRem(14);
   .tk-select {
     &__single-value {
-      color: getColor($graphite, '50');
+      @extend .tk-text-color;
     }
     &__control {
       @extend .tk-input;
@@ -152,7 +152,7 @@
     }
     .tk-select__indicator {
       cursor: pointer;
-      color: getColor($graphite, '50');
+      color: inherit;
       &.tk-select__clear-indicator {
         color: $--tk-input-default-active-color;
         &:hover {
@@ -160,9 +160,9 @@
         }
       }
       &.tk-select__dropdown-indicator {
-        color: getColor($graphite, '50');
+        color: inherit;
         .tk-select__single-value {
-          color: getColor($graphite, '50');
+          color: inherit;
         }
       }
     }
