@@ -1,0 +1,17 @@
+.tk-text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    
+    &__expand {
+        width: -webkit-fill-available;
+    }
+
+    &__single-row {
+        white-space: nowrap;
+    }
+
+    &__multiple-rows {
+        display: -webkit-inline-box;
+    }
+}
