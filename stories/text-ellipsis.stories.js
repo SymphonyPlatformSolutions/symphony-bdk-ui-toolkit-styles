@@ -10,7 +10,7 @@ export const TextEllipsis = () => {
         
         <li>1 row</li>
         <div style="background: grey; margin: 16px 0px; padding: 16px; width: 200px">
-            <p class="tk-text-ellipsis tk-text-ellipsis__single-row" style="-webkit-line-clamp: 1">
+            <p class="tk-text-ellipsis" style="-webkit-line-clamp: 1">
                 Really, really, really, really, really, really, long text that gets cut!
             </p>
         </div>
