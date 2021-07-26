@@ -2,10 +2,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
-    
-    &__expand {
-        width: -webkit-fill-available;
-    }
 
     &__single-row {
         white-space: nowrap;
