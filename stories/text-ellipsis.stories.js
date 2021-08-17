@@ -7,6 +7,7 @@ export const TextEllipsis = () => {
     <div style="min-height: 600px">
     
         <h1>Text Ellipsis</h1>
+        <p>When implementing Text Ellipsis you need to add -webkit-line-clamp specifying the number of rows for the text before it ellipses.</p>
         
         <li>1 row</li>
         <div style="background: grey; margin: 16px 0px; padding: 16px; width: 200px">
