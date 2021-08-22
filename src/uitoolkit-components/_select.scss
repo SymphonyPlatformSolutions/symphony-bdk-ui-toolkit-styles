@@ -160,7 +160,10 @@
         }
         .tk-select__close-icon {
           &:focus-visible {
-            @include browserOutline();
+            box-shadow: 0 0 0 toRem(2) var(--tk-color-electricity);
+            border-radius: 50%;
+            outline: 0;
+            display: flex;
           }
         }
       }
