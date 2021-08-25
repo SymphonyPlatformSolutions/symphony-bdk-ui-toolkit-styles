@@ -113,6 +113,7 @@ $dialog-scrollbar-box-shadow: rgba($scolor-black, 0.5);
     &::-webkit-scrollbar-thumb {
       border-radius: toRem(5);
       background-color: $dialog-scrollbar-box-shadow;
+      border-color: $dialog-scrollbar-box-shadow;
     }
   }
 
